@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>News</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- <script>
+      {
+        const params = {
+          "api-key": "9rzex4BHDoJS0LHjAaReItAKfGf126nd",
+          "q": "apple",  // Поиск новостей по ключевому слову "apple"
+          "sort": "newest"  // Сортировка результатов по новейшим статьям
+        };
+        
+
+        const url = new URL("https://api.nytimes.com/svc/search/v2/articlesearch.json");
+        Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+        
+
+        fetch(url)
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error("Ошибка при выполнении запроса: " + response.status);
+          })
+          .then(data => {
+            // Обработка данных...
+            console.log(data);
+          })
+          .catch(error => {
+            // Обработка ошибок...
+            console.error(error);
+          });
+        
+      }
+    </script> -->
+  </body>
+</html>
